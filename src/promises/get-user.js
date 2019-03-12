@@ -1,13 +1,6 @@
-import users from "../data/users.json";
+
+import dataProxy, {ACTION, DOMAIN} from "../data/data-proxy";
 
 export default (login) => {
-    return new Promise((resolve, reject) => {
-        const found = users.find(u => u.login === login);
-
-        if(found) {
-            resolve(found);
-        } else {
-            reject(new Error("user not found"));
-        }
-    })
+    return dataProxy({action: ACTION.read, domain: DOMAIN.user, payload: { login }})
 } 
