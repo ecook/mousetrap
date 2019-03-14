@@ -17,6 +17,11 @@ export default () => {
         })
     }, [posts])
 
+    const handleClick = (e, id) => {
+        e.preventDefault();
+        alert("click" + id);
+    }
+
     return (
         <React.Fragment>
             { error && <Alert variant="danger">error</Alert>}
@@ -33,7 +38,7 @@ export default () => {
             </thead>
             <tbody>
             { posts.map(post => (
-                <tr key={post.id}> 
+                <tr key={post.id} onClick={(e) => handleClick(e, post.id)}> 
                     <th>{post.id}</th>
                     <th><img width="100px" src={post.imageSource} alt="" /></th>
                     <th>{post.name}</th>
