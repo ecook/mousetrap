@@ -21,10 +21,11 @@ export default () => {
         <React.Fragment>
             { error && <Alert variant="danger">error</Alert>}
         <h1>List</h1>
-        <Table striped bordered hover>
+        <Table striped bordered>
             <thead>
                 <tr>
                     <th>ID</th>
+                    <th>Image</th>
                     <th>Name</th>
                     <th>Author</th>
                     <th>Description</th>
@@ -33,7 +34,11 @@ export default () => {
             <tbody>
             { posts.map(post => (
                 <tr key={post.id}> 
-                    <th>{post.id}</th><th>{post.name}</th> <th>{post.author}</th><th>{post.description}</th>
+                    <th>{post.id}</th>
+                    <th><img width="100px" src={post.imageSource} alt="" /></th>
+                    <th>{post.name}</th>
+                    <th>{post.author}</th>
+                    <th>{post.description}</th>
                 </tr>
             ))}
             </tbody>

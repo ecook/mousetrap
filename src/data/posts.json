@@ -4,7 +4,7 @@
         "name": "first trap",
         "author": "joe",
         "description": "First test trap",
-        "imageSoure": "",
+        "imageSource": "http://3.bp.blogspot.com/-gAC-E_S2b-A/VlPQ_93B8MI/AAAAAAAALLw/LH-g-9Gj4lw/s1600/better_mousetrap-e1344835235715.jpg",
         "stars": {
             "1": 0,
             "2": 0,
@@ -21,5 +21,35 @@
                 "comment": "This is an awesome trap"
             }
         ]
+    },
+    {
+        "id": "2",
+        "name": "paws up",
+        "author": "joe",
+        "description": "test",
+        "imageSource": "https://memeguy.com/photos/images/a-patent-for-a-better-mousetrap-james-alexander-williams--301079.png",
+        "stars": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 1
+        },
+        "comments": []
+    },
+    {
+        "id": "3",
+        "name": "Cat trap",
+        "author": "joe",
+        "description": "dangerous cat",
+        "imageSource": "https://i.imgur.com/IlQLP.png",
+        "stars": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 1
+        },
+        "comments": []
     }
 ]
