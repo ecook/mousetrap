@@ -1,0 +1,25 @@
+[
+    {
+        "id": "1",
+        "name": "first trap",
+        "author": "joe",
+        "description": "First test trap",
+        "imageSoure": "",
+        "stars": {
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 1,
+            "5": 1
+        },
+        "comments": [
+            {
+                "id": "1",
+                "author": "admin",
+                "avitar": "",
+                "datetime": "",
+                "comment": "This is an awesome trap"
+            }
+        ]
+    }
+]
