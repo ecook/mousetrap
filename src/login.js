@@ -39,7 +39,7 @@ export default (props) => {
     }
 
     return (
-        <div>
+        <React.Fragment>
             {error && <Alert variant="danger">{error} </Alert>}
             <Modal.Dialog>
                 <Modal.Header closeButton onHide={handleClose}>
@@ -63,6 +63,6 @@ export default (props) => {
                     </Modal.Footer>
                 </Form>
             </Modal.Dialog>
-        </div>
+        </React.Fragment>
     )
 }

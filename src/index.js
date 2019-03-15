@@ -16,17 +16,21 @@ const initialState = {
         isLoggedIn: false,
         login: "",
         password: "",
-        isAdmin: false
+        isAdmin: false,
+        avatar: ""
     }
 }
 
 const reducer = (state, action) => {
     switch (action.type) {
         case 'login': {
-            return {...state, profile: {isLoggedIn: true, login: action.data.login, password: action.data.password, isAdmin: action.data.isAdmin}};
+            return {...state, profile: {
+                isLoggedIn: true, 
+                ...action.data, 
+                }};
         }
         case 'logout': {
-            return {...state, profile: {isLoggedIn: false, login: "", password: "", isAdmin: false}};
+            return {...state, ...initialState};
         }
         default: {
             return state;

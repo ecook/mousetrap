@@ -2,10 +2,12 @@
     {
         "login": "admin",
         "password": "admin",
-        "isAdmin": true
+        "isAdmin": true,
+        "avatar": "avatar4"
     },
     {
         "login": "joe",
-        "password": "dirt"
+        "password": "dirt",
+        "avatar": "avatar6"
     }
 ]

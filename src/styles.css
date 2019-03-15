@@ -2,3 +2,73 @@
     font-family: sans-serif;
     background-color: rgb(128, 128, 94);
 }
+
+.avatar {
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%;
+}
+
+.avatar1 {
+    background: url(images/avatars-small.jpg) -26px -17px; 
+}
+
+.avatar2 {
+    background: url(images/avatars-small.jpg) -96px -17px; 
+}
+
+.avatar3 {
+    background: url(images/avatars-small.jpg) -166px -17px; 
+}
+
+.avatar4 {
+    background: url(images/avatars-small.jpg) -236px -17px; 
+}
+
+.avatar5 {
+    background: url(images/avatars-small.jpg) -26px -87px; 
+}
+
+.avatar6 {
+    background: url(images/avatars-small.jpg) -96px -87px;
+}
+
+.avatar7 {
+    background: url(images/avatars-small.jpg) -166px -87px; 
+}
+
+.avatar8 {
+    background: url(images/avatars-small.jpg) -236px -87px; 
+}
+
+.avatar9 {
+    background: url(images/avatars-small.jpg) -26px -149px; 
+}
+
+.avatar10 {
+    background: url(images/avatars-small.jpg) -96px -149px;
+}
+
+.avatar11 {
+    background: url(images/avatars-small.jpg) -166px -149px; 
+}
+
+.avatar12 {
+    background: url(images/avatars-small.jpg) -236px -149px; 
+}
+
+.avatar13 {
+    background: url(images/avatars-small.jpg) -26px -215px; 
+}
+
+.avatar14 {
+    background: url(images/avatars-small.jpg) -96px -215px;
+}
+
+.avatar15 {
+    background: url(images/avatars-small.jpg) -166px -215px; 
+}
+
+.avatar16 {
+    background: url(images/avatars-small.jpg) -236px -215px; 
+}
