@@ -50,7 +50,7 @@ function App() {
                 <Route path="/login/" render={(props) => <Login {...props} dispatch={dispatch} />} />
                 <Route path="/manageusers/" exact component={ManageUsers} />
                 <Route path="/profile/" exact component={Profile} />
-                <Route path="/detail/" exact component={TrapDetail} />            
+                <Route path="/detail/:id" exact component={TrapDetail} />            
                 <Route path="/avatars/" exact component={Avatars} />
             </div>
         </Router>

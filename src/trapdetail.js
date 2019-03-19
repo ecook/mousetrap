@@ -1,7 +1,9 @@
 import React from "react";
 
-export default () => {
+export default ({match}) => {
     return (
-        <h1>Detailed view</h1>
+        <React.Fragment>
+            <h1>Detailed view of {match.params.id}</h1>
+        </React.Fragment>
     )
 }
