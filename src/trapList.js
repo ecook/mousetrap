@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import getPosts from "./promises/get-posts";
 import { Alert, Table } from "react-bootstrap";
-
+import { Link } from "react-router-dom";
 
 export default () => {
 
@@ -10,17 +10,18 @@ export default () => {
     const [ error, setError ] = useState("");
 
     useEffect(() => {
+        let ignore = false;
+
         getPosts().then((data) => {
-            setPosts(data)
+            if(!ignore) {
+                setPosts(data)
+            }
         }, (err) => {
             setError(err.message);
         })
+        
+        return () => { ignore = true };
     }, [posts])
-
-    const handleClick = (e, id) => {
-        e.preventDefault();
-        alert("click" + id);
-    }
 
     return (
         <React.Fragment>
@@ -38,13 +39,17 @@ export default () => {
             </thead>
             <tbody>
             { posts.map(post => (
-                <tr key={post.id} onClick={(e) => handleClick(e, post.id)}> 
-                    <th>{post.id}</th>
-                    <th><img width="100px" src={post.imageSource} alt="" /></th>
+                
+                <tr key={post.id} > 
+                
+                    <th>{post.id}  </th>
+                    <th><Link to={`/detail/${post.id}`} ><img width="100px" src={post.imageSource} alt="" /></Link></th>
                     <th>{post.name}</th>
                     <th>{post.author}</th>
                     <th>{post.description}</th>
+                  
                 </tr>
+                
             ))}
             </tbody>
         </Table>
