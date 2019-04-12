@@ -12,13 +12,14 @@ Things used in this web example:
 
 # Hooks
 
-I've used several of the basic hooks, shown in many examples.  I thing that stood out for me, was how to use an effect when calling async functions.  This is shown in the trapdetail.js file.
+I've used several of the basic hooks, shown in many examples.  One thing that stood out for me, was how to use an effect when calling async functions.  there needs to be an ignore flag to prevent the state from being cleared.  This is shown in the trapdetail.js and trapList.js files.
 
-hooks used:
+hooks used so far:
 - useState
 - useReducer
 - useEffect
 
+I'd like to add the useContext for a more global handling of the login state.
 
 # Data
 
